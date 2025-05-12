@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <title>Infinite Saber</title>
+</head>
+<body>
+   <div id="content">
+    <canvas id="game"></canvas>
+    <div id="menu">
+        <div class="data-box" id="upgrades">
+            <div class="data-box-title">
+                <h1>Upgrades</h1>
+            </div>
+            <div class="item" id="accuracy">
+                <h2>Accuracy</h2>
+                <p>Gain more points by hilting the block</p>
+                <p class="price">500</p>
+                <p class="level">0</p>
+            </div>
+            <div class="item" id="blockFrequency">
+                <h2>More Notes</h2>
+                <p>Increase block spawn rate</p>
+                <p class="price">1000</p>
+                <p class="level">0</p>
+            </div>
+            <div class="item" id="maxMultiplier">
+                <h2>Multiplier</h2>
+                <p>Increase maximum multiplier</p>
+                <p class="price">1000</p>
+                <p class="level">0</p>
+            </div>
+            <div class="item" id="timeDependence">
+                <h2>Less Time Dependence</h2>
+                <p>Acc better, even with bad timing!</p>
+                <p class="price">10000</p>
+                <p class="level">0</p>
+            </div>
+            <div class="item" id="parity">
+                <h2>Parity</h2>
+                <p>Finally, no more 2018 mapping!</p>
+                <p class="price">1000000</p>
+                <p class="level">0</p>
+            </div>
+        </div>
+        <div class="data-box" id="stats">
+            <div class="data-box-title">
+                <h1>Stats</h1>
+            </div>
+            <progress id="health" value="50" max="100">50%</progress>
+            <p id="score">Score: 0</p>
+            <p id="combo">Combo: 0</p>
+            <p id="multiplier">Multiplier: 0</p>
+        </div>
+    </div>
+   </div>
+   <script src="main.js"></script> 
+</body>
+</html>
